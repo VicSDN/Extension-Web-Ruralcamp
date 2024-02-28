@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Enlaces Ruralcamp",
+  "version": "1.0",
+  "description": "Una extensión para mostrar los enlaces mas importantes del bootcamp ",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "permissions": ["activeTab", "cookies", "storage"],
+  "host_permissions": [
+    "https://drive.google.com/",
+    "https://chrome-ravioli-2d4.notion.site/",
+    "https://us02web.zoom.us/"
+  ],
+  "icons": {
+    "48": "icon.png",
+    "96": "icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
